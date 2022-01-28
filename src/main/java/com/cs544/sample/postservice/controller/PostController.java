@@ -19,12 +19,12 @@ public class PostController {
         return this.postService.getPostById(postId);
     }
 
-    @GetMapping("")
+    @GetMapping("/")
     public List<Post> getAllPosts(){
         return this.postService.getAll();
     }
 
-    @PostMapping("")
+    @PostMapping("/")
     public Post savePost(@RequestBody Post post){
         return this.postService.savePost(post);
     }
